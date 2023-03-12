@@ -177,7 +177,7 @@ class Flight:
                     f"  DNI: {passenger[2]}" \
                     f"  Asiento: {seat}" \
                     f"  Numero de vuelo: {self._number}" \
-                    f"  Modelo de aeronave: {self._aircraft.get_model()}" \
+                    f"  Modelo: {self._aircraft.get_model()}" \
                     " |"
             esquinasYlaterales = '+' + '-'*(len(output)-2) + '+'
             laterales = '|' + ' '*(len(output)-2) + '|'
