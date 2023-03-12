@@ -165,10 +165,10 @@ class Flight:
             - f"  Numero de vuelo: {self._number}" \ Concatena el numero de vuelo
             - f"  Modelo de aeronave: {self._aircraft.get_model()}" \ Concatena el modelo de aeronave
             - " |" Concatena el final de la tarjeta de embarque
-            - '+' + '-'*(len(output)-2) + '+' Concatena el borde superior de la tarjeta de embarque
-            - '|' + ' '*(len(output)-2) + '|' Concatena el borde lateral de la tarjeta de embarque
-            - esquinasYlaterales = '\n'.join(lineas) Concatena todas las lineas de la tarjeta de embarque
-            - print(tarjeta) Imprime por consola la tarjeta de embarque
+            - esquinasYlaterales = '+' + '-'*(len(output)-2) + '+' Calcula el numero de caracteres de la tarjeta de embarque
+            - lineas = [esquinasYlaterales, output, esquinasYlaterales] Crea una lista con las lineas de la tarjeta de embarque
+            - tarjeta = '\n'.join(lineas) Une las lineas de la tarjeta de embarque
+            - print(tarjeta) Imprime la tarjeta de embarque
         """
         import passenger
         for passenger, seat in sorted(self._passenger_seats()):
