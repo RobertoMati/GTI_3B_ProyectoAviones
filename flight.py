@@ -180,8 +180,8 @@ class Flight:
                     f"  Modelo: {self._aircraft.get_model()}" \
                     " |"
             esquinasYlaterales = '+' + '-'*(len(output)-2) + '+'
-            laterales = '|' + ' '*(len(output)-2) + '|'
-            lineas = [esquinasYlaterales, laterales, output, laterales, esquinasYlaterales]
+        
+            lineas = [esquinasYlaterales, output, esquinasYlaterales]
             tarjeta = '\n'.join(lineas)
             print(tarjeta)
             print()
