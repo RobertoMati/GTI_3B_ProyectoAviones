@@ -10,15 +10,15 @@ class Flight:
         - _seating: Una lista de diccionarios que representa el seating plan
 
     METODOS:
-        - get_aircraft_model()
-        - get_number()
-        - allocate_passenger()
-        - reallocate_passenger()
-        - num_available_seats()
-        - print_seating()
-        - print_boarding_tarjetas()
-        - parse_seat()
-        - passenger_seats()
+        - get_aircraft_model(): Muestra el modelo de la aeronave
+        - get_number(): Muestra el numero de vuelo
+        - allocate_passenger(): Asigna un asiento a un pasajero
+        - reallocate_passenger(): Reasigna un asiento a un pasajero
+        - num_available_seats(): Calcula el numero de asientos disponibles
+        - print_seating(): Muestra el seating plan
+        - print_boarding_tarjetas(): Muestra las tarjetas de embarque
+        - parse_seat(): Parsea un asiento
+        - passenger_seats(): Calcula los asientos ocupados por un pasajero
     """
     #-----------------------------------------
     def __init__(self, number, aircraft):
