@@ -174,7 +174,7 @@ class Flight:
         for passenger, seat in sorted(self._passenger_seats()):
             output = f"| Nombre: {passenger[0]}" \
                     f"  Apellidos: {passenger[1]}" \
-                    f"  DNI: {passenger[2]}" \
+                    f"  ID: {passenger[2]}" \
                     f"  Asiento: {seat}" \
                     f"  Numero de vuelo: {self._number}" \
                     f"  Modelo: {self._aircraft.get_model()}" \
